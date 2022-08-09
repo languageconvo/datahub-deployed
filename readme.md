@@ -3,6 +3,12 @@
 
 This project attempts to make it *somewhat* easy for small teams to deploy a production instance of DataHub to the cloud. If you have some devops experience, you can probably get through this in an hour or two. If you don't have devops experience it'll take longer, but our aim is to make the steps here clear enough that anyone can use them.
 
+# Quickstart
+1. Read through this readme
+2. Follow `instructions.md` in the /mysql folder to set up a MySQL database
+3. Follow `instructions.md` in the /elasticsearch folder to set up an Elasticsearch instance
+4. Follow `instructions.md` in the /elasticbeanstalk folder to get your DataHub app up and running the cloud, ready for your team to use!
+
 # You Should Probably Use Acryl Data
 [Acryl Data](https://www.acryldata.io/) is the team behind DataHub, and they're building a managed solution. Once it's available, you should probably use it if your organization can afford to. Would you rather spend your time building your own product, or managing the infrastructure behind your team's DataHub setup? Here's a fingers-crossed hope that Acryl is able to put together usage-based pricing that will be affordable for teams of any size! An open-source project of this magnitude often does better if there is a team behind it that is paid to think and work on it every day, so support that team financially if you can. 
 
@@ -46,7 +52,7 @@ That said, for our small team so far the following has worked:
 - Elastic.co 2GB instance = $41/month
 - Elastic Beanstalk t3.large = $60/month
 
-## Updating DataHub Versions
+# Updating DataHub Versions
 
 When DataHub releases a new version, you'll usually only have to follow these simple steps:
 
