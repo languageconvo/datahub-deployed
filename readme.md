@@ -54,10 +54,4 @@ That said, for our small team so far the following has worked:
 
 # Updating DataHub Versions
 
-When DataHub releases a new version, you'll usually only have to follow these simple steps:
-
-1. Wait for us to release a new version of this project, we'll try to be quick about it (or you can go to the /admin folder and follow the instructions, it's fairly simple)
-2. Get the `/elasticbeanstalk/docker-compose.yml` file and replace the {{{ $vars }}} with the connection details of your MySQL database and Elasticsearch instance
-3. Go to AWS Elastic Beanstalk and upload the new `docker-compose.yml` file
-
-That's it!
+When DataHub releases a new version, updating your instance to the new version only takes a few simple steps, typically less than 5 minutes of work. See `updating.md` for the step-by-step guide.
