@@ -50,8 +50,13 @@ That said, for our small team so far the following has worked:
 
 - AWS RDS t3.medium = $50/month
 - Elastic.co 2GB instance = $41/month
-- Elastic Beanstalk t3.large = $60/month
+- AWS Elastic Beanstalk t3.large = $60/month
+- AWS NAT Gateway = $35/month
 
 # Updating DataHub Versions
 
 When DataHub releases a new version, updating your instance to the new version only takes a few simple steps, typically less than 5 minutes of work. See `updating.md` for the step-by-step guide.
+
+# Problems & Things to Consider
+
+- The current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but there is an additional cost for the NAT gateway, and our own instructions don't yet include how to set this up.
