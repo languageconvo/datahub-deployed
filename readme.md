@@ -1,7 +1,17 @@
+# ⚠️One Major Remaining Problem, Not Ready Yet!
+
+As we noted in Slack, there's a problem that prevents you from adding new users. This problem is occurring in DataHub's Docker quickstart so we do think it may be an issue they can resolve, but it *could* be something we've set up incorrectly in this project. We don't recommend using this guide until we get this figured out.
+
 # Deploy DataHub!
 [DataHub](https://datahubproject.io/) is an awesome metadata platform, a tool to document, discover, share, and collaborate on your data. It's open-source, and progressing rapidly.
 
 This project attempts to make it *somewhat* easy for small teams to deploy a production instance of DataHub to the cloud. If you have some devops experience, you can probably get through this in an hour or two. If you don't have devops experience it'll take longer, but our aim is to make the steps here clear enough that anyone can use them.
+
+# Quickstart
+1. Read through this readme
+2. Follow `instructions.md` in the /mysql folder to set up a MySQL database
+3. Follow `instructions.md` in the /elasticsearch folder to set up an Elasticsearch instance
+4. Follow `instructions.md` in the /elasticbeanstalk folder to get your DataHub app up and running the cloud, ready for your team to use!
 
 # You Should Probably Use Acryl Data
 [Acryl Data](https://www.acryldata.io/) is the team behind DataHub, and they're building a managed solution. Once it's available, you should probably use it if your organization can afford to. Would you rather spend your time building your own product, or managing the infrastructure behind your team's DataHub setup? Here's a fingers-crossed hope that Acryl is able to put together usage-based pricing that will be affordable for teams of any size! An open-source project of this magnitude often does better if there is a team behind it that is paid to think and work on it every day, so support that team financially if you can. 
@@ -44,14 +54,14 @@ That said, for our small team so far the following has worked:
 
 - AWS RDS t3.medium = $50/month
 - Elastic.co 2GB instance = $41/month
-- Elastic Beanstalk t3.large = $60/month
+- AWS Elastic Beanstalk t3.large = $60/month
+- AWS NAT Gateway = $35/month [somewhat optional - needed for a single static outbound IP address to access your data sources, rather than a constantly changing IP address]
 
-## Updating DataHub Versions
+# Updating DataHub Versions
 
-When DataHub releases a new version, you'll usually only have to follow these simple steps:
+When DataHub releases a new version, updating your instance to the new version only takes a few simple steps, typically less than 5 minutes of work. See `updating.md` for the step-by-step guide.
 
-1. Wait for us to release a new version of this project, we'll try to be quick about it (or you can go to the /admin folder and follow the instructions, it's fairly simple)
-2. Get the `/elasticbeanstalk/docker-compose.yml` file and replace the {{{ $vars }}} with the connection details of your MySQL database and Elasticsearch instance
-3. Go to AWS Elastic Beanstalk and upload the new `docker-compose.yml` file
+# Problems & Things to Consider
 
-That's it!
+- ⚠️One Major Remaining Problem, Not Ready Yet! As we noted in Slack, there's a problem that prevents you from adding new users. This problem is occurring in DataHub's Docker quickstart so we do think it may be an issue they can resolve, but it *could* be something we've set up incorrectly in this project. We don't recommend using this guide until we get this figured out. 
+- The current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but there is an additional cost for the NAT gateway, and our own instructions don't yet include how to set this up.
