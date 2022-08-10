@@ -1,7 +1,3 @@
-# ⚠️One Major Remaining Problem, Not Ready Yet!
-
-As we noted in Slack, there's a problem that prevents you from adding new users. This problem is occurring in DataHub's Docker quickstart so we do think it may be an issue they can resolve, but it *could* be something we've set up incorrectly in this project. We don't recommend using this guide until we get this figured out.
-
 # Deploy DataHub!
 [DataHub](https://datahubproject.io/) is an awesome metadata platform, a tool to document, discover, share, and collaborate on your data. It's open-source, and progressing rapidly.
 
@@ -63,5 +59,4 @@ When DataHub releases a new version, updating your instance to the new version o
 
 # Problems & Things to Consider
 
-- ⚠️One Major Remaining Problem, Not Ready Yet! As we noted in Slack, there's a problem that prevents you from adding new users. This problem is occurring in DataHub's Docker quickstart so we do think it may be an issue they can resolve, but it *could* be something we've set up incorrectly in this project. We don't recommend using this guide until we get this figured out. 
-- The current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but there is an additional cost for the NAT gateway, and our own instructions don't yet include how to set this up.
+- Our current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea, even though your data sources have username/password or token auth. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but note we don't yet have these steps in our /elasticbeanstalk instructions
