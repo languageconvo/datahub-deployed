@@ -1,3 +1,7 @@
+# ⚠️One Remaining Problem, Not Ready Yet!
+
+As we noted in Slack, there's a problem that prevents you from adding new users. This problem is occuring in DataHub's Docker quickstart so we do think it may be an issue they can resolve, but it *could* be something we've set up incorrectly in this project. We don't recommend using this guide until we get this figured out.
+
 # Deploy DataHub!
 [DataHub](https://datahubproject.io/) is an awesome metadata platform, a tool to document, discover, share, and collaborate on your data. It's open-source, and progressing rapidly.
 
