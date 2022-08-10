@@ -55,7 +55,7 @@ That said, for our small team so far the following has worked:
 - AWS RDS t3.medium = $50/month
 - Elastic.co 2GB instance = $41/month
 - AWS Elastic Beanstalk t3.large = $60/month
-- AWS NAT Gateway = $35/month
+- AWS NAT Gateway = $35/month [somewhat optional - needed for a single static outbound IP address to access your data sources, rather than a constantly changing IP address]
 
 # Updating DataHub Versions
 
