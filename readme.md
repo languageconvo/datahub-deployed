@@ -5,9 +5,9 @@ This project attempts to make it *somewhat* easy for small teams to deploy a pro
 
 # Quickstart
 1. Read through this readme
-2. Follow [mysql/instructions.md](mysql/instructions.md) to set up a MySQL database
-3. Follow [elasticsearch/instructions.md](elasticsearch/instructions.md]) to set up an Elasticsearch instance
-4. Follow [elasticbeanstalk/instructions.md](elasticbeanstalk/instructions.md]) to get your DataHub app up and running the cloud, ready for your team to use!
+2. Follow [/mysql/instructions.md](/mysql/instructions.md) to set up a MySQL database
+3. Follow [/elasticsearch/instructions.md](/elasticsearch/instructions.md) to set up an Elasticsearch instance
+4. Follow [/elasticbeanstalk/instructions.md](/elasticbeanstalk/instructions.md) to get your DataHub app up and running the cloud, ready for your team to use!
 
 # You Should Probably Use Acryl Data
 [Acryl Data](https://www.acryldata.io/) is the team behind DataHub, and they're building a managed solution. Once it's available, you should probably use it if your organization can afford to. Would you rather spend your time building your own product, or managing the infrastructure behind your team's DataHub setup? Here's a fingers-crossed hope that Acryl is able to put together usage-based pricing that will be affordable for teams of any size! An open-source project of this magnitude often does better if there is a team behind it that is paid to think and work on it every day, so support that team financially if you can. 
@@ -55,8 +55,9 @@ That said, for our small team so far the following has worked:
 
 # Updating DataHub Versions
 
-When DataHub releases a new version, updating your instance to the new version only takes a few simple steps, typically less than 5 minutes of work. See [updating.md](updating.md) for the step-by-step guide.
+When DataHub releases a new version, updating your instance to the new version only takes a few simple steps, typically less than 5 minutes of work. See [/updating.md](/updating.md) for the step-by-step guide.
 
 # Problems & Things to Consider
 
-- Our current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea, even though your data sources have username/password or token auth. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but note we don't yet have these steps in our /elasticbeanstalk instructions
+- Details for the Elastic Beanstalk setup instructions aren't entirely complete yet. We should finish these very soon; if you want to try them out and let us know what is missing, that'd be helpful!
+- Our current setup steps do not include how to set up a static outbound IP address with Elastic Beanstalk. That means on your data sources, you would have to allow *all* IP addresses access. Obviously that's not a good idea, even though your data sources have username/password or token auth. Setting up a static outbound IP address is not very difficult, see https://aws.amazon.com/premiumsupport/knowledge-center/elastic-beanstalk-static-IP-address/ but note we don't yet have these steps in our [/elasticbeanstalk](/elasticbeanstalk) instructions
