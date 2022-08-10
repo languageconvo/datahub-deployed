@@ -15,7 +15,7 @@ We need to do main things:
 3. **Important**: choose to edit the Advanced Settings. Mainly you'll want to look at the instance size; larger instances obviously cost more. A small instance with 2 GB of RAM, in a single availability zone, is working for us. That said, you'll want to consider the tradeoffs; only having one availability zone means that if that single instance goes down, your DataHub app will go down. And the more users and daily interaction you have on your app, the more RAM you'll want.
 4. Once the instance has been created (elastic.co calls this a "deployment"), go to the Edit page of the deployment in elastic.co and check the monthly cost. Make sure you're ok with it!
 5. Next, go to the Security tab of the deployment and get the username and password.
-6. Now we need to make two API calls to this instance. A good tool to do this is Postman. For instructions, see the `elasticsearch-api1.md` file for details about the first API call, and the second in `elasticsearch-api2.md`.
+6. Now we need to make two API calls to this instance. A good tool to do this is Postman. For instructions, see the [elasticsearch-api1.md](elasticsearch-api1.md) file for details about the first API call, and the second in  [elasticsearch-api2.md](elasticsearch-api2.md)
 
 That's it! Record the URL, username, and password of your Elasticsearch instance, we'll need them in future steps.
 

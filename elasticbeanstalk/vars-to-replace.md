@@ -1,3 +1,8 @@
+# Overview
+This file explains the "variables" that you'll see in [docker-compose.yml](docker-compose.yml). These indicate things you need to replace with your own values. We made them easy to find by encompassing them with `{{{ }}}`  
+
+# Vars
+
 Elasticsearch host url:
 
 {{{ $elastic_host }}} = 1234abcd.us-west-2.aws.found.io
