@@ -1,3 +1,9 @@
+# ⚠️ WARNING - Did Not Work With Later Versions of Datahub ⚠️
+Unfortunately, this process did not end up working well due to a number of very complicated deployment issues. We've archived this repo just in case it might help someone a little in the future.
+
+# ⚠️ Try Acryl, Plural.sh, or Elest.io ⚠️
+Acryl is the for-profit arm behind Datahub; Plural.sh also offers Datahub hosted, and Elest.io plans to do so in the future.
+
 # Deploy DataHub!
 [DataHub](https://datahubproject.io/) is an awesome metadata platform, a tool to document, discover, share, and collaborate on your data. It's open-source, and progressing rapidly.
 
